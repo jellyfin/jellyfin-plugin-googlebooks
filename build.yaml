@@ -1,14 +1,13 @@
 ---
-name: "Bookshelf"
-guid: "9c4e63f1-031b-4f25-988b-4f7d78a8b53e"
-version: 12
+name: "Google Books"
+guid: "7a9f4890-b216-4d75-a0e4-4c9f29ed5217"
+version: 1
 targetAbi: "10.11.0.0"
 framework: "net9.0"
 owner: "jellyfin"
-overview: "Manage your books"
+overview: "Google Books Metadata Provider"
 description: >
   Supports several different metadata providers and options for organizing your collection.
-
 category: "Books"
 artifacts:
   - "Jellyfin.Plugin.GoogleBooks.dll"
