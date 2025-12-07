@@ -1,6 +1,6 @@
 using Jellyfin.Plugin.GoogleBooks.Common;
 
-namespace Jellyfin.Plugin.Bookshelf.Tests
+namespace Jellyfin.Plugin.GoogleBooks.Tests
 {
     public class BookFileNameParserTests
     {

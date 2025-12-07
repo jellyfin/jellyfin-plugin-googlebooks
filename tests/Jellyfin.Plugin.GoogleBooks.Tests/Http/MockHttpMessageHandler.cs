@@ -1,4 +1,4 @@
-﻿namespace Jellyfin.Plugin.Bookshelf.Tests.Http
+﻿namespace Jellyfin.Plugin.GoogleBooks.Tests.Http
 {
     /// <summary>
     /// HttpMessageHandler that returns a mocked response.

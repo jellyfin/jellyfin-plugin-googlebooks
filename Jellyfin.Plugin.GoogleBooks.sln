@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.GoogleBooks
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6215AFB5-402D-4B86-BD96-E33FC37B44EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.Bookshelf.Tests", "tests\Jellyfin.Plugin.Bookshelf.Tests\Jellyfin.Plugin.Bookshelf.Tests.csproj", "{FC333648-2AEE-4759-9088-35386909CB58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.GoogleBooks.Tests", "tests\Jellyfin.Plugin.GoogleBooks.Tests\Jellyfin.Plugin.GoogleBooks.Tests.csproj", "{FC333648-2AEE-4759-9088-35386909CB58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,13 +1,13 @@
 using System.Net;
-using Jellyfin.Plugin.Bookshelf.Tests.Http;
 using Jellyfin.Plugin.GoogleBooks.Common;
 using Jellyfin.Plugin.GoogleBooks.Providers;
+using Jellyfin.Plugin.GoogleBooks.Tests.Http;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Providers;
 using Microsoft.Extensions.Logging.Abstractions;
 using NSubstitute;
 
-namespace Jellyfin.Plugin.Bookshelf.Tests
+namespace Jellyfin.Plugin.GoogleBooks.Tests
 {
     public class GoogleBooksImageProviderTests
     {
