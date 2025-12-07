@@ -1,6 +1,4 @@
-using Jellyfin.Data.Enums;
 using Jellyfin.Plugin.Bookshelf.Common;
-using MediaBrowser.Model.Entities;
 
 namespace Jellyfin.Plugin.Bookshelf.Tests
 {
