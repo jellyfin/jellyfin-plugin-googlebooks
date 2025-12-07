@@ -1,4 +1,5 @@
 ﻿using System;
+using Jellyfin.Plugin.GoogleBooks.Common;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
 using MediaBrowser.Model.Serialization;
@@ -22,10 +23,10 @@ namespace Jellyfin.Plugin.GoogleBooks
         }
 
         /// <inheritdoc />
-        public override string Name => "Bookshelf";
+        public override string Name => GoogleBooksConstants.ProviderName;
 
         /// <inheritdoc />
-        public override Guid Id => Guid.Parse("9c4e63f1-031b-4f25-988b-4f7d78a8b53e");
+        public override Guid Id => Guid.Parse("7a9f4890-b216-4d75-a0e4-4c9f29ed5217");
 
         /// <summary>
         /// Gets the current plugin instance.
