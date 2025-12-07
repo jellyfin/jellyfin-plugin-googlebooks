@@ -1,7 +1,8 @@
 using System.Net;
 using Jellyfin.Data.Enums;
-using Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks;
 using Jellyfin.Plugin.Bookshelf.Tests.Http;
+using Jellyfin.Plugin.GoogleBooks.Common;
+using Jellyfin.Plugin.GoogleBooks.Providers;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Providers;
 using Microsoft.Extensions.Logging.Abstractions;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks
+namespace Jellyfin.Plugin.GoogleBooks.Models
 {
     /// <summary>
     /// Volume info dto.

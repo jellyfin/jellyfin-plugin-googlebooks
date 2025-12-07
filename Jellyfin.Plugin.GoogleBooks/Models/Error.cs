@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
-namespace Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks
+namespace Jellyfin.Plugin.GoogleBooks.Models
 {
     internal class Error
     {

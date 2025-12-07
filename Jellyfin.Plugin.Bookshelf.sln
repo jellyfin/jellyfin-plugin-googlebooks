@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.Bookshelf", "Jellyfin.Plugin.Bookshelf\Jellyfin.Plugin.Bookshelf.csproj", "{8D744D83-5403-4BA4-8794-760AF69DAC06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jellyfin.Plugin.GoogleBooks", "Jellyfin.Plugin.GoogleBooks\Jellyfin.Plugin.GoogleBooks.csproj", "{8D744D83-5403-4BA4-8794-760AF69DAC06}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6215AFB5-402D-4B86-BD96-E33FC37B44EF}"
 EndProject

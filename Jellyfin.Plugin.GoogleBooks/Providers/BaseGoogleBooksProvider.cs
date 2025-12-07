@@ -4,10 +4,12 @@ using System.Net.Http.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Jellyfin.Extensions.Json;
+using Jellyfin.Plugin.GoogleBooks.Common;
+using Jellyfin.Plugin.GoogleBooks.Models;
 using MediaBrowser.Common.Net;
 using Microsoft.Extensions.Logging;
 
-namespace Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks
+namespace Jellyfin.Plugin.GoogleBooks.Providers
 {
     /// <summary>
     /// Base class for the Google Books providers.

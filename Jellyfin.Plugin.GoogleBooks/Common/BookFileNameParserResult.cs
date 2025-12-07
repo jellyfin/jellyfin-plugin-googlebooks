@@ -1,6 +1,6 @@
 using System;
 
-namespace Jellyfin.Plugin.Bookshelf.Common
+namespace Jellyfin.Plugin.GoogleBooks.Common
 {
     /// <summary>
     /// Data object used to pass result of the book name parsing.

@@ -1,4 +1,4 @@
-namespace Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks
+namespace Jellyfin.Plugin.GoogleBooks.Models
 {
     internal class ErrorDetails
     {

@@ -1,9 +1,10 @@
+using Jellyfin.Plugin.GoogleBooks.Common;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Providers;
 using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.Providers;
 
-namespace Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks
+namespace Jellyfin.Plugin.GoogleBooks.Providers
 {
     /// <inheritdoc />
     public class GoogleBooksExternalId : IExternalId

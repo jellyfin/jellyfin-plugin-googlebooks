@@ -4,11 +4,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using Jellyfin.Data.Enums;
 using MediaBrowser.Controller.Providers;
-using MediaBrowser.Model.Entities;
 
-namespace Jellyfin.Plugin.Bookshelf.Common
+namespace Jellyfin.Plugin.GoogleBooks.Common
 {
     /// <summary>
     /// Helper class to retrieve name, year, index and series name from a book name and parent.

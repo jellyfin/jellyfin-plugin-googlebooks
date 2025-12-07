@@ -7,7 +7,8 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using Jellyfin.Data.Enums;
-using Jellyfin.Plugin.Bookshelf.Common;
+using Jellyfin.Plugin.GoogleBooks.Common;
+using Jellyfin.Plugin.GoogleBooks.Models;
 using MediaBrowser.Common.Net;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Providers;
@@ -15,7 +16,7 @@ using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.Providers;
 using Microsoft.Extensions.Logging;
 
-namespace Jellyfin.Plugin.Bookshelf.Providers.GoogleBooks
+namespace Jellyfin.Plugin.GoogleBooks.Providers
 {
     /// <summary>
     /// Google books provider.

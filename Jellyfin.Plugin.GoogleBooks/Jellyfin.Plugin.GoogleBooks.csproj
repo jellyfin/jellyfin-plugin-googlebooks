@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>Jellyfin.Plugin.Bookshelf</RootNamespace>
+    <RootNamespace>Jellyfin.Plugin.GoogleBooks</RootNamespace>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
@@ -12,8 +12,6 @@
 
   <ItemGroup>
     <PackageReference Include="Jellyfin.Controller" Version="10.*-*" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
-    <PackageReference Include="SharpCompress" Version="0.38.0" />
   </ItemGroup>
 
   <!-- Code Analyzers-->

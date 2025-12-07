@@ -11,9 +11,7 @@ description: >
 
 category: "Books"
 artifacts:
-  - "Jellyfin.Plugin.Bookshelf.dll"
-  - "SharpCompress.dll"
-  - "ZstdSharp.dll"
+  - "Jellyfin.Plugin.GoogleBooks.dll"
 changelog: |-
   - Fix nullability for 10.10 (#116) @crobibero
   - Update opf and add ISBN (#108) @AshleyDeo

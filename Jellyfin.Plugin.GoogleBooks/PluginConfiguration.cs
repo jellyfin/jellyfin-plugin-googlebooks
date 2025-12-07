@@ -1,6 +1,6 @@
 using MediaBrowser.Model.Plugins;
 
-namespace Jellyfin.Plugin.Bookshelf.Configuration
+namespace Jellyfin.Plugin.GoogleBooks
 {
     /// <inheritdoc/>
     public class PluginConfiguration : BasePluginConfiguration

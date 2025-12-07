@@ -1,10 +1,9 @@
 ﻿using System;
-using Jellyfin.Plugin.Bookshelf.Configuration;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
 using MediaBrowser.Model.Serialization;
 
-namespace Jellyfin.Plugin.Bookshelf
+namespace Jellyfin.Plugin.GoogleBooks
 {
     /// <summary>
     /// Plugin entrypoint.

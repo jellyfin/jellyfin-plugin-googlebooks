@@ -1,4 +1,4 @@
-using Jellyfin.Plugin.Bookshelf.Common;
+using Jellyfin.Plugin.GoogleBooks.Common;
 
 namespace Jellyfin.Plugin.Bookshelf.Tests
 {
