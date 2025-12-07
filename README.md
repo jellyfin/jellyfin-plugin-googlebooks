@@ -19,7 +19,7 @@
 
 ## About
 
-The Jellyfin Bookshelf plugin enables the collection of eBooks & AudioBooks, with the latter being able to be played through Jellyfin.
+This plugin adds metadata and image providers for Google Books.
 
 ## Build & Installation Process
 
