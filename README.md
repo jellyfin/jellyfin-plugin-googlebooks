@@ -6,14 +6,14 @@
 <img alt="Logo Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true"/>
 <br/>
 <br/>
-<a href="https://github.com/jellyfin/jellyfin-plugin-bookshelf/actions/workflows/build.yaml">
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jellyfin/jellyfin-plugin-bookshelf/build.yaml">
+<a href="https://github.com/jellyfin/jellyfin-plugin-googlebooks/actions/workflows/build.yaml">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jellyfin/jellyfin-plugin-googlebooks/build.yaml">
 </a>
-<a href="https://github.com/jellyfin/jellyfin-plugin-bookshelf">
-<img alt="MIT License" src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-bookshelf.svg"/>
+<a href="https://github.com/jellyfin/jellyfin-plugin-googlebooks">
+<img alt="MIT License" src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-googlebooks.svg"/>
 </a>
-<a href="https://github.com/jellyfin/jellyfin-plugin-bookshelf/releases">
-<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-plugin-bookshelf.svg"/>
+<a href="https://github.com/jellyfin/jellyfin-plugin-googlebooks/releases">
+<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-plugin-googlebooks.svg"/>
 </a>
 </p>
 
