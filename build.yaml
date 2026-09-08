@@ -1,15 +1,22 @@
 ---
 name: "Google Books"
 guid: "7a9f4890-b216-4d75-a0e4-4c9f29ed5217"
-version: 1
+version: 2
 targetAbi: "12.0.0.0"
 framework: "net10.0"
 owner: "jellyfin"
 overview: "Google Books Metadata Provider"
 description: >
   Pulls book metadata and cover images from Google Books.
+
 category: "Books"
 artifacts:
   - "Jellyfin.Plugin.GoogleBooks.dll"
 changelog: |-
-  Initial Release
+  - Unstable: Update to latest Jellyfin preview packages (#14) @crobibero, @claude, @jellyfin-bot
+  - Update dependency NSubstitute to v6 (#21) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
+  - Update dependency xunit.runner.visualstudio to v4 (#20) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
+  - Update dependency coverlet.collector to v10 (#18) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
+  - Update dependency NSubstitute to 5.3.0 (#17) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
+  - Update dependency coverlet.collector to 6.0.4 (#15) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
+  - Update dependency xunit to 2.9.3 (#13) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
