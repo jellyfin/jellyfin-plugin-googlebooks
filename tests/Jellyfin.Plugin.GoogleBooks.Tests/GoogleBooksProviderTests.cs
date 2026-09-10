@@ -67,6 +67,29 @@ namespace Jellyfin.Plugin.GoogleBooks.Tests
         }
 
         [Fact]
+        public async Task GetSearchResults_WithApiKey_AddsKeyToRequest()
+        {
+            const string ApiKey = "test/key+value";
+            var mockedMessageHandler = new MockHttpMessageHandler(new List<(Func<Uri, bool> requestMatcher, MockHttpResponse response)>
+            {
+                ((Uri uri) => uri.Query.Contains("key=test%2Fkey%2Bvalue", StringComparison.Ordinal), new MockHttpResponse(HttpStatusCode.OK, GetTestSearchResult())),
+            });
+
+            var mockedHttpClientFactory = Substitute.For<IHttpClientFactory>();
+            using var client = new HttpClient(mockedMessageHandler);
+            mockedHttpClientFactory.CreateClient(Arg.Any<string>()).Returns(client);
+
+            IRemoteMetadataProvider<Book, BookInfo> provider = new GoogleBooksProvider(
+                NullLogger<GoogleBooksProvider>.Instance,
+                mockedHttpClientFactory,
+                () => ApiKey);
+
+            var results = await provider.GetSearchResults(new BookInfo() { Name = "Children of Time" }, CancellationToken.None);
+
+            Assert.NotEmpty(results);
+        }
+
+        [Fact]
         public async Task GetSearchResults_ByProviderId_Success()
         {
             var mockedMessageHandler = new MockHttpMessageHandler(new List<(Func<Uri, bool> requestMatcher, MockHttpResponse response)>

@@ -1,7 +1,9 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using Jellyfin.Plugin.GoogleBooks.Common;
 using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
+using MediaBrowser.Model.Plugins;
 using MediaBrowser.Model.Serialization;
 
 namespace Jellyfin.Plugin.GoogleBooks
@@ -9,7 +11,7 @@ namespace Jellyfin.Plugin.GoogleBooks
     /// <summary>
     /// Plugin entrypoint.
     /// </summary>
-    public class Plugin : BasePlugin<PluginConfiguration>
+    public class Plugin : BasePlugin<PluginConfiguration>, IHasWebPages
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Plugin"/> class.
@@ -32,5 +34,23 @@ namespace Jellyfin.Plugin.GoogleBooks
         /// Gets the current plugin instance.
         /// </summary>
         public static Plugin? Instance { get; private set; }
+
+        /// <inheritdoc />
+        public IEnumerable<PluginPageInfo> GetPages()
+        {
+            return
+            [
+                new PluginPageInfo
+                {
+                    Name = "googlebooks",
+                    EmbeddedResourcePath = GetType().Namespace + ".Web.googlebooks.html"
+                },
+                new PluginPageInfo
+                {
+                    Name = "googlebooksjs",
+                    EmbeddedResourcePath = GetType().Namespace + ".Web.googlebooks.js"
+                }
+            ];
+        }
     }
 }

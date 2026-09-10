@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using System.Net.Http;
 using System.Net.Http.Json;
@@ -18,16 +19,22 @@ namespace Jellyfin.Plugin.GoogleBooks.Providers
     {
         private readonly ILogger<BaseGoogleBooksProvider> _logger;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly Func<string?> _apiKeyProvider;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BaseGoogleBooksProvider"/> class.
         /// </summary>
         /// <param name="logger">Instance of the <see cref="ILogger{GoogleBooksProvider}"/> interface.</param>
         /// <param name="httpClientFactory">Instance of the <see cref="IHttpClientFactory"/> interface.</param>
-        protected BaseGoogleBooksProvider(ILogger<BaseGoogleBooksProvider> logger, IHttpClientFactory httpClientFactory)
+        /// <param name="apiKeyProvider">Function that returns the configured Google Books API key.</param>
+        protected BaseGoogleBooksProvider(
+            ILogger<BaseGoogleBooksProvider> logger,
+            IHttpClientFactory httpClientFactory,
+            Func<string?>? apiKeyProvider = null)
         {
             _logger = logger;
             _httpClientFactory = httpClientFactory;
+            _apiKeyProvider = apiKeyProvider ?? (() => Plugin.Instance?.Configuration.ApiKey);
         }
 
         /// <summary>
@@ -40,9 +47,10 @@ namespace Jellyfin.Plugin.GoogleBooks.Providers
         protected async Task<T?> GetResultFromAPI<T>(string url, CancellationToken cancellationToken)
             where T : class
         {
+            var requestUrl = GoogleApiUrls.AddApiKey(url, _apiKeyProvider());
             var response = await _httpClientFactory
                 .CreateClient(NamedClient.Default)
-                .GetAsync(url, cancellationToken)
+                .GetAsync(requestUrl, cancellationToken)
                 .ConfigureAwait(false);
 
             if (!response.IsSuccessStatusCode)
