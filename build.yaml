@@ -13,6 +13,7 @@ category: "Books"
 artifacts:
   - "Jellyfin.Plugin.GoogleBooks.dll"
 changelog: |-
+  - Add support for user-provided Google Books API keys
   - Unstable: Update to latest Jellyfin preview packages (#14) @crobibero, @claude, @jellyfin-bot
   - Update dependency NSubstitute to v6 (#21) [@renovate[bot]](https://github.com/apps/renovate), @crobibero
   - Update dependency xunit.runner.visualstudio to v4 (#20) [@renovate[bot]](https://github.com/apps/renovate), @crobibero

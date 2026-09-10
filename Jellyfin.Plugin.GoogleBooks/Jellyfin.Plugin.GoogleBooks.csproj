@@ -14,6 +14,13 @@
     <PackageReference Include="Jellyfin.Controller" Version="12.*-*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Web\googlebooks.html" />
+    <None Remove="Web\googlebooks.js" />
+    <EmbeddedResource Include="Web\googlebooks.html" />
+    <EmbeddedResource Include="Web\googlebooks.js" />
+  </ItemGroup>
+
   <!-- Code Analyzers-->
   <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" PrivateAssets="All" />

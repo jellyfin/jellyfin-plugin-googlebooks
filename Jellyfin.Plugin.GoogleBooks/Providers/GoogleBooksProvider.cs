@@ -40,6 +40,22 @@ namespace Jellyfin.Plugin.GoogleBooks.Providers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GoogleBooksProvider"/> class for testing.
+        /// </summary>
+        /// <param name="logger">Instance of the <see cref="ILogger{GoogleBooksProvider}"/> interface.</param>
+        /// <param name="httpClientFactory">Instance of the <see cref="IHttpClientFactory"/> interface.</param>
+        /// <param name="apiKeyProvider">Function that returns the Google Books API key.</param>
+        internal GoogleBooksProvider(
+            ILogger<GoogleBooksProvider> logger,
+            IHttpClientFactory httpClientFactory,
+            Func<string?> apiKeyProvider)
+            : base(logger, httpClientFactory, apiKeyProvider)
+        {
+            _httpClientFactory = httpClientFactory;
+            _logger = logger;
+        }
+
         /// <inheritdoc />
         public string Name => GoogleBooksConstants.ProviderName;
 
