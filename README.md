@@ -21,6 +21,16 @@
 
 This plugin adds metadata and image providers for Google Books.
 
+## Configuration
+
+Google requires public Books API requests to identify a Google Cloud project.
+Enable the Books API in your Google Cloud project, create an API key restricted
+to that API, and enter it on the plugin's settings page in the Jellyfin
+dashboard.
+
+See the [Google Books API documentation](https://developers.google.com/books/docs/v1/using#APIKey)
+for instructions on creating an API key.
+
 ## Build & Installation Process
 
 1. Clone this repository
